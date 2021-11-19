@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.imgPelicula{
+    max-width: 50%;
+}
+.logo{
+    width: 135px;
+    height: 50px;
+}
+.contenedor{
+    margin: 100%;
+    margin: auto;
+}
+/*-------------------Estilos del Header-------------------*/
+.header{
+    background: rgb(255, 255, 255);
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.logo, .iconMenu{
+    margin: 5px;
+    color: skyblue;
+}
+.iconMenu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 5px;
+}
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100px;
+    z-index: 100;
+    transition: all 0.5s;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menuLink{
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+    background: #fff;
+    color: skyblue;
+    height: 60px;
+    border-bottom: 1px solid skyblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menuLink:hover{
+    background: skyblue;
+    color: #fff;
+}
+.muestrate{
+    left: 0;
+}
+/*-------------------Estilos del Banner-------------------*/
+.banner img{
+    width: 50%;
+    height: 100%;
+}
+.banner{
+    position: relative;
+    text-align: center;
+}
+#btnPrev, #btnNext{
+    width: 40px;
+    height: 40px;
+    background: rgba(98, 199, 231, 0.5);
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+    cursor: pointer;
+    color: #fff;
+
+}
+#btnPrev:hover, #btnNext:hover{
+    background: rgba(98, 199, 231, 0.9);
+}
+#btnPrev{
+    left: 10px;
+}   
+#btnNext{
+    right: 10px;
+}
+/*-------------------Estilos tarjetas de peliculas-------------------*/
+.tituloPelicula{
+    font-size: 40px;
+    text-align: center;
+}
+.txtPelicula{
+    text-align: justify;
+    font-size: 20px;
+    padding: 15px;
+}
+.imgPelicula{
+    display: inline-block;
+    width: 100%;
+    height: 70%;
+    border-radius: 5%;
+    margin: 24px;
+}
+.columnaPelicula{
+    display: inline-block;
+    position: relative;
+
+}
+.columnaPelicula h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translatey(-50%);
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;   
+}
+.pelicula .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.columnaPelicula:hover .imgPelicula{
+box-shadow: 0 0 8px #fff, 
+0 15px 200px;
+transform: scale(1.1);
+}
+
+
+@media(min-width:300px){
+    .imgPelicula{
+        width: 300px;
+    }
+
+}
+
